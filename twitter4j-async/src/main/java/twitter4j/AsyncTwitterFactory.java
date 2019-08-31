@@ -37,6 +37,8 @@ public final class AsyncTwitterFactory implements java.io.Serializable {
     private final Configuration conf;
     private static final AsyncTwitter SINGLETON;
 
+
+
     static {
         SINGLETON = new AsyncTwitterImpl(ConfigurationContext.getInstance(), TwitterFactory.DEFAULT_AUTHORIZATION);
     }
